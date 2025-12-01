@@ -709,6 +709,16 @@ body {
     display: block;
 }
 
+
+.catalogo-img-chica {
+    max-height: 100%;   /* la imagen nunca supera la altura */
+    max-width: 100%;    /* mantiene proporción */
+    object-fit: contain;
+    display: block;
+}
+
+
+
 /* ==========================================
    ESTILO EDITORIAL ZARA PARA LOS TEXTOS
    ========================================== */
@@ -1973,9 +1983,9 @@ body {
   width: 100%;
   z-index: 999;
 
-  background: rgba(0,0,0,0.55);   
+  /*background: rgba(0,0,0,0.45);   
   backdrop-filter: blur(6px);     
-  -webkit-backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);*/
 
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
@@ -1999,12 +2009,12 @@ body {
 
 /* LOGO */
 .logo-cinematic {
-  height: clamp(70px, 8vw, 110px);
+  height: clamp(70px, 15vw, 250px);
   transition: height .35s ease, filter .35s ease;
 }
 
 .header-cinematic.scrolled .logo-cinematic {
-  height: clamp(46px, 6vw, 70px);
+  height: clamp(46px, 6vw, 100px);
   filter: brightness(.85);
 }
 
