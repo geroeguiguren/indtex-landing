@@ -198,7 +198,7 @@ if (contactForm) {
     e.preventDefault();
 
     const formData = new FormData(contactForm);
-    formData.set("access_key", "3d1c542f-4c1c-4f83-a43e-066571169d61");
+    formData.set("access_key", "e2c74202-6cc3-42c4-b695-5f8205b1b8f3");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
